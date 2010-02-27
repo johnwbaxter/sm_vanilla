@@ -1,6 +1,8 @@
 Instructions
 --------------------------------------------------------------------------------
 
+The ExpressionEngine 2.0 version is available by switching to the 2.X branch. 
+
 You’ll need an install of Vanilla Forums 2 with the SSO plugin before we go any further. On the SSO settings page fill in the text fields so it looks similar:
 
 # Authenticate Url
