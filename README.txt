@@ -13,12 +13,12 @@ http://example.com/ee/index.php/member/register
 http://example.com/ee/index.php/member/login
 
 # Sign-out Url
-http://example.com/ee/index.php?ACT=12 (EE2) or http://example.com/ee/index.php?ACT=10 (EE1)
+http://example.com/ee/index.php?ACT=10 (EE1)
 
 In the Vanilla Forums config.php make sure the following cookie name is set:
 $Configuration['Garden']['Cookie']['Name'] = 'exp_vanilla';
 
-Now you’ve (hopefully) got that sorted move the “vanilla” extension folder into your “/system/expressionengine/third_party/” folder. You can enable that in the control panel now.
+Now you’ve (hopefully) got that sorted move the “ext.sm_vanilla.php” extension file into your “/system/extensions/” folder. You can enable that in the control panel now.
 
 Create a template matching the one used for “Authenticate Url” with the following inside:
 {if logged_in}
