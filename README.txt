@@ -13,7 +13,7 @@ http://example.com/ee/index.php/member/register
 http://example.com/ee/index.php/member/login
 
 # Sign-out Url
-http://example.com/ee/index.php?ACT=10 (EE1)
+http://example.com/ee/index.php?ACT=10
 
 In the Vanilla Forums config.php make sure the following cookie name is set:
 $Configuration['Garden']['Cookie']['Name'] = 'exp_vanilla';
