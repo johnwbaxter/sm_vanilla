@@ -32,8 +32,6 @@ class Sm_vanilla_ext {
 	
 	function activate_extension()
 	{
-		global $DB;
-
 		$this->EE->db->query($this->EE->db->
 		    insert_string('exp_extensions',
 		        array(
@@ -48,7 +46,6 @@ class Sm_vanilla_ext {
 				)
 			)
 		);
-		
 	}
 	// END Activate Extension
 	
@@ -59,8 +56,6 @@ class Sm_vanilla_ext {
 	
 	function update_extension($current='')
 	{
-		global $DB;
-
 		if ($current == '' OR $current == $this->version)
 		{
 			return FALSE;
@@ -77,8 +72,6 @@ class Sm_vanilla_ext {
 	
 	function disable_extension()
 	{
-		global $DB;
-
 		$this->EE->db->query("DELETE FROM exp_extensions WHERE class = 'Sm_vanilla_ext'");
 	}
 	// END Disable Extension
